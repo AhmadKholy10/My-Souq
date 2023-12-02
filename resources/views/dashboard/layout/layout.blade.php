@@ -186,7 +186,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">
+                                    <a href="{{ route('dashboard.settings.view') }}">
                                         <i data-feather="settings"></i>Settings
                                     </a>
                                 </li>

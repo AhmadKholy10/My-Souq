@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Dashboard\IndexController;
+use App\Http\Controllers\Dashboard\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/admin', [IndexController::class, 'index'])-> name('admin');
+
+Route::get('/settings', [SettingsController::class, 'index'])-> name('dashboard.settings.view');
+Route::put('/settings/{setting}', [SettingsController::class, 'update'])-> name('dashboard.settings.update');
+
+
