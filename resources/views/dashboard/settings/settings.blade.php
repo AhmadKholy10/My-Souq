@@ -61,13 +61,13 @@
                                 <div class="form-group">
                                     <label for="validationCustom01" class="col-form-label pt-0"><span>*</span>
                                         site name </label>
-                                    <input class="form-control" id="validationCustom01" type="text" name="name" value="">
+                                    <input class="form-control" id="validationCustom01" type="text" name="name" value="{{ $setting->description }}">
                                 </div>
 
 
                                 <div class="form-group">
                                     <label class="col-form-label">description </label>
-                                    <textarea rows="5" cols="12" name="description">{{$setting->twitter}}</textarea>
+                                    <textarea rows="5" cols="12" name="description">{{$setting->description}}</textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="validationCustom02" class="col-form-label"><span>*</span>
