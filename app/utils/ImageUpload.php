@@ -17,7 +17,7 @@ class ImageUpload {
         $img->fit($witdth, $height, function ($constraint) {
         $constraint->upsize();
         })->stream();
-        Storage::disk('public')->put($path.$imgName, $img);
-        return 'public/'. $path. $imgName;
+        Storage::disk('images')->put($path.$imgName, $img);
+        return  $path. $imgName;
     }
 }

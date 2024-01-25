@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/admin', [IndexController::class, 'index'])-> name('admin');
 
+
+#############   Settings Routes    ############# 
 Route::get('/settings', [SettingsController::class, 'index'])-> name('dashboard.settings.view');
 Route::put('/settings/{setting}', [SettingsController::class, 'update'])-> name('dashboard.settings.update');
 

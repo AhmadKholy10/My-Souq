@@ -50,10 +50,12 @@
                                     <label for="validationCustom05" class="col-form-label pt-0">
                                         logo </label>
                                     <input class="form-control" id="validationCustom05" type="file" name="logo">
+                                    <img src="{{ asset($setting->logo) }}">
                                 </div>
                                 <div class="form-group">
                                     <label class="col-form-label">favicon </label>
                                     <input class="form-control" id="validationCustom05" type="file" name="favicon">
+                                    <img src="{{ asset($setting->favicon) }}">
                                 </div>
 
 

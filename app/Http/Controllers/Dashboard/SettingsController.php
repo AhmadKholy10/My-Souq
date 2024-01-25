@@ -17,7 +17,7 @@ class SettingsController extends Controller
     }
 
     public function update(SettingsUpdateRequest $request,Setting $setting){
-       // dd($request-> all());
+       
        $setting->update($request-> validated());
        if($request->has('logo')){
         $logo = ImageUpload::uploadImage($request->logo, 200, 100, 'logo/');

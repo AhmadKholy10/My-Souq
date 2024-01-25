@@ -307,15 +307,10 @@
             </li>
 
             <li>
-                <a class="sidebar-header" href="javascript:void(0)"><i
+                <a class="sidebar-header" href="{{ route('dashboard.settings.view') }}"><i
                         data-feather="settings"></i><span>Settings</span><i
                         class="fa fa-angle-right pull-right"></i></a>
-                <ul class="sidebar-submenu">
-                    <li>
-                        <a href="profile.html"><i class="fa fa-circle"></i>Profile
-                        </a>
-                    </li>
-                </ul>
+                
             </li>
 
             <li>
